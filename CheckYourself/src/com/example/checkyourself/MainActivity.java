@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends Activity {
-	public final static String EXTRA_MESSAGE = "com.example.checkyourself.MESSAGE";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +26,6 @@ public class MainActivity extends Activity {
 	public void sendLogin (View view)
 	{
 		Intent intent = new Intent(this, DisplayLoginControlsActivity.class);
-		EditText editText = (EditText) findViewById(R.id.edit_message);
-		String message = editText.getText().toString();
-		intent.putExtra(EXTRA_MESSAGE, message);
 		startActivity(intent);
 		
 	}

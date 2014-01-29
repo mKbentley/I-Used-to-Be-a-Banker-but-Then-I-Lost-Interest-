@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:hint="@string/edit_userID" />
+
 	
 	<TextView
         android:layout_width="wrap_content"
@@ -27,9 +28,16 @@
 	
 	<EditText
         android:id="@+id/edit_password"
+        android:inputType="textPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:hint="@string/edit_password" />
+	
+	<Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/button_enter" />
 
 </LinearLayout>
