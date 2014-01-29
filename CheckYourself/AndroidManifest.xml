@@ -22,6 +22,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        
+        <activity
+            android:name="com.example.checkyourself.DisplayLoginControlsActivity"
+            android:label="@string/title_activity_display_login_controls"
+            android:parentActivityName="com.example.checkyourself.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.checkyourself.MainActivity" />
+        </activity>
 
+    </application>
+   
+       
 </manifest>
