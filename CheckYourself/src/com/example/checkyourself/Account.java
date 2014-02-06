@@ -1,12 +1,12 @@
 package com.example.checkyourself;
 
-public class Account {
+public class UserAccount {
 	private String username;
 	private String password;
 	private Person person;
 	
 	//Constructor 
-    public Account(String uname,String pstring,Person name){
+    public UserAccount(String uname,String pstring,Person name){
     	this.username=uname;
     	this.password=pstring;
     	this.person=name;	
