@@ -22,10 +22,18 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	// Called when the user clicks the Register button
+	// Called when the user clicks the Login button
 	public void sendLogin (View view)
 	{
 		Intent intent = new Intent(this, DisplayLoginControlsActivity.class);
+		startActivity(intent);
+		
+	}
+	
+	// Called when the user clicks the Registration button
+	public void sendRegistration (View view)
+	{
+		Intent intent = new Intent(this, DisplayRegisrationControlsActivity.class);
 		startActivity(intent);
 		
 	}

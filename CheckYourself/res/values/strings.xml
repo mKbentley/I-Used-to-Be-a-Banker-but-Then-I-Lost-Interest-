@@ -20,5 +20,6 @@
     <string name="dialog_login_unsuccessful">Your username or password were incorrect. Please try again.</string>
     <string name="okay">Okay</string>
     <string name="title_activity_display_login_unsuccessful">Login Unsuccessfu</string>
+    <string name="title_activity_display_regisration_controls">Registration</string>
 
 </resources>
