@@ -16,5 +16,6 @@
     <string name="button_login">Log in</string>
     <string name="welcome">Welcome to Check Yourself!</string>
     <string name="welcome_prompt">Please select one of the following options to get started."</string>
+    <string name="title_activity_display_login_successful">Login Successful</string>
 
 </resources>

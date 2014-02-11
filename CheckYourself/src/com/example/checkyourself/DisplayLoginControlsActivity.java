@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.SuppressLint;
@@ -59,6 +61,26 @@ public class DisplayLoginControlsActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void sendCredentials(View vew)
+	{	
+		EditText user_name = (EditText) findViewById(R.id.edit_userID);
+		String username = user_name.getText().toString();
+		
+		EditText pass_word = (EditText) findViewById(R.id.edit_password);
+		String password = pass_word.getText().toString();
+		
+		LoginValidation validate = new LoginValidation();
+		
+		if(validate.checkCredentials(username, password))
+		{
+			Intent intent = new Intent(this, DisplayLoginSuccessful.class);
+			startActivity(intent);
+		}
+		
+		
+		
 	}
 
 }

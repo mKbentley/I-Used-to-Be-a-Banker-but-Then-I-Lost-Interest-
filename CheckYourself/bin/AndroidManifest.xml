@@ -22,7 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="com.example.checkyourself.DisplayLoginControlsActivity"
             android:label="@string/title_activity_display_login_controls"
@@ -31,8 +30,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.checkyourself.MainActivity" />
         </activity>
-
+        <activity
+            android:name="com.example.checkyourself.DisplayLoginSuccessful"
+            android:label="@string/title_activity_display_login_successful" >
+        </activity>
     </application>
-   
-       
+
 </manifest>

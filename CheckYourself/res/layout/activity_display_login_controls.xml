@@ -25,6 +25,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
 		android:gravity="center_horizontal"
-        android:text="@string/button_login" />
+        android:text="@string/button_login"
+        android:onClick="sendCredentials" />
 
 </LinearLayout>
