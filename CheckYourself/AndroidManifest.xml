@@ -34,6 +34,10 @@
             android:name="com.example.checkyourself.DisplayLoginSuccessful"
             android:label="@string/title_activity_display_login_successful" >
         </activity>
+        <activity
+            android:name="com.example.checkyourself.DisplayLoginUnsuccessful"
+            android:label="@string/title_activity_display_login_unsuccessful" >
+        </activity>
     </application>
 
 </manifest>

@@ -17,5 +17,8 @@
     <string name="welcome">Welcome to Check Yourself!</string>
     <string name="welcome_prompt">Please select one of the following options to get started."</string>
     <string name="title_activity_display_login_successful">Login Successful</string>
+    <string name="dialog_login_unsuccessful">Your username or password were incorrect. Please try again.</string>
+    <string name="okay">Okay</string>
+    <string name="title_activity_display_login_unsuccessful">Login Unsuccessfu</string>
 
 </resources>

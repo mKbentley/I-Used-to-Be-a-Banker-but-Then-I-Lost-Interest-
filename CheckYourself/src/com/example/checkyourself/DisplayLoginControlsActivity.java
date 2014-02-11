@@ -13,7 +13,8 @@ import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 
-public class DisplayLoginControlsActivity extends Activity {
+public class DisplayLoginControlsActivity extends Activity 
+{
 
 	@SuppressLint("NewApi")
 	@Override
@@ -78,9 +79,18 @@ public class DisplayLoginControlsActivity extends Activity {
 			Intent intent = new Intent(this, DisplayLoginSuccessful.class);
 			startActivity(intent);
 		}
-		
-		
-		
+		else
+		{
+			Intent intent = new Intent(this, DisplayLoginControlsActivity.class);
+			startActivity(intent);
+			
+		    TextView textView = new TextView(this);
+		    textView.setTextSize(20);
+		    textView.setText("Your username or password were incorrect. Please try again.");
+
+		    // Set the text view as the activity layout
+		    setContentView(textView);
+		}
 	}
 
 }
