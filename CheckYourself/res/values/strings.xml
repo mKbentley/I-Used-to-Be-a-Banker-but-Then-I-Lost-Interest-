@@ -21,5 +21,10 @@
     <string name="okay">Okay</string>
     <string name="title_activity_display_login_unsuccessful">Login Unsuccessfu</string>
     <string name="title_activity_display_regisration_controls">Registration</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="desired_username">Desired Username</string>
+    <string name="desired_password">Desired Password</string>
+    <string name="button_registration">Register</string>
 
 </resources>

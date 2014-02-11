@@ -14,23 +14,35 @@
         android:text="Set up a new account." />
 	
 	<EditText
-        android:id="@+id/edit_userID"
+        android:id="@+id/edit_firstname"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/edit_userID" />
+        android:hint="@string/first_name" />
 	
 	<EditText
-        android:id="@+id/edit_password"
+        android:id="@+id/edit_lastname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name" />
+	
+	<EditText
+        android:id="@+id/edit_desiredusername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/desired_username" />
+	
+	<EditText
+        android:id="@+id/edit_desiredpassword"
         android:inputType="textPassword"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/edit_password" />
+        android:hint="@string/desired_password" />
 
 	<Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
 		android:gravity="center_horizontal"
-        android:text="@string/button_login"
-        android:onClick="sendCredentials" />
+        android:text="@string/button_registration"
+        android:onClick="sendNewUser" />
 
 </LinearLayout>

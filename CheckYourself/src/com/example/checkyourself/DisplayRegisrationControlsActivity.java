@@ -4,8 +4,12 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.Build;
 
 public class DisplayRegisrationControlsActivity extends Activity {
@@ -44,5 +48,35 @@ public class DisplayRegisrationControlsActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	public void sendNewUser(View view)
+	{	
+		EditText user_name = (EditText) findViewById(R.id.edit_desiredusername);
+		String username = user_name.getText().toString();
+		
+		EditText pass_word = (EditText) findViewById(R.id.edit_desiredpassword);
+		String password = pass_word.getText().toString();
+		
+		LoginValidation validate = new LoginValidation();
+		
+		if(!validate.checkExistence(username, password))
+		{
+			Intent intent = new Intent(this, DisplayLoginSuccessful.class);
+			startActivity(intent);
+		}
+		else
+		{
+			Intent intent = new Intent(this, DisplayLoginControlsActivity.class);
+			startActivity(intent);
+			
+		    TextView textView = new TextView(this);
+		    textView.setTextSize(20);
+		    textView.setText("Your username or password were incorrect. Please try again.");
+
+		    // Set the text view as the activity layout
+		    setContentView(textView);
+		}
+	}
+
 
 }
