@@ -57,21 +57,33 @@ public class DisplayRegisrationControlsActivity extends Activity {
 		EditText pass_word = (EditText) findViewById(R.id.edit_desiredpassword);
 		String password = pass_word.getText().toString();
 		
+		EditText first_name = (EditText) findViewById(R.id.edit_firstname);
+		String firstName = first_name.getText().toString();
+		
+		EditText last_name = (EditText) findViewById(R.id.edit_lastname);
+		String lastName = first_name.getText().toString();
+		
 		LoginValidation validate = new LoginValidation();
 		
-		if(!validate.checkExistence(username, password))
-		{
-			Intent intent = new Intent(this, DisplayLoginSuccessful.class);
-			startActivity(intent);
-		}
-		else
+		if(!validate.checkExistence(username))
 		{
 			Intent intent = new Intent(this, DisplayLoginControlsActivity.class);
 			startActivity(intent);
 			
+			TextView textView = new TextView(this);
+		    textView.setTextSize(20);
+		    textView.setText("Registration successful!");
+		    
+		    setContentView(textView);
+		}
+		else
+		{
+			Intent intent = new Intent(this, DisplayRegisrationControlsActivity.class);
+			startActivity(intent);
+			
 		    TextView textView = new TextView(this);
 		    textView.setTextSize(20);
-		    textView.setText("Your username or password were incorrect. Please try again.");
+		    textView.setText("Sorry, that username is taken. Please try again.");
 
 		    // Set the text view as the activity layout
 		    setContentView(textView);

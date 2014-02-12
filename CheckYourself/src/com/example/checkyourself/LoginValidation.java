@@ -12,9 +12,9 @@ public class LoginValidation
 			return false;
 	}
 
-	public boolean checkExistence(String username, String password)
+	public boolean checkExistence(String username)
 	{
-		if(username.equals("admin") && password.equals("pass123"))
+		if(username.equals("admin"))
 		{
 			return true;
 		}
