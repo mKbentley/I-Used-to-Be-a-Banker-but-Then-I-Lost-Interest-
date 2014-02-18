@@ -1,5 +1,6 @@
 package com.example.checkyourself;
 
+import java.io.IOException;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -64,7 +65,7 @@ public class DisplayLoginControlsActivity extends Activity
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void sendCredentials(View vew)
+	public void sendCredentials(View vew) throws IOException
 	{	
 		EditText user_name = (EditText) findViewById(R.id.edit_userID);
 		String username = user_name.getText().toString();

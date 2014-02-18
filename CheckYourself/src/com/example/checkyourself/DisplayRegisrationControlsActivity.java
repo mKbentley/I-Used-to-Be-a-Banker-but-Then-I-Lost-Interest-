@@ -1,8 +1,9 @@
 package com.example.checkyourself;
 
+import java.io.IOException;
+
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -49,7 +50,7 @@ public class DisplayRegisrationControlsActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void sendNewUser(View view)
+	public void sendNewUser(View view) throws IOException
 	{	
 		EditText user_name = (EditText) findViewById(R.id.edit_desiredusername);
 		String username = user_name.getText().toString();
@@ -65,7 +66,7 @@ public class DisplayRegisrationControlsActivity extends Activity {
 		
 		LoginValidation validate = new LoginValidation();
 		
-		if(!validate.checkExistence(username))
+		if(!validate.checkExistence(username, password))
 		{
 			Intent intent = new Intent(this, DisplayLoginControlsActivity.class);
 			startActivity(intent);
