@@ -1,29 +1,29 @@
 package com.example.checkyourself;
 
-import java.io.IOException;
-
 public class LoginValidation 
 {
-	public boolean checkCredentials(String username, String password) throws IOException
+	public boolean checkCredentials(String username, String password)
 	{
-        ReadUserCredentials read = new ReadUserCredentials();
-        String[] credentials = read.openFile();
+        boolean result;
         
-        for(int i = 0; i < credentials.length; i++)
+        if(username.equals("admin") && password.equals("pass123"))
         {
-        	if(credentials[i].equals("admin, pass123"))
-        	{
-        		return true;
-        	}
+        	result = true;
         }
-        
-        return false;
+        else if(username.equals(NewUser.username) && password.equals(NewUser.password))
+        {
+        	result = true;
+        }
+        else
+        	result =  false;
+      
+        return result;
 		
 	}
 
-	public boolean checkExistence (String username, String password) throws IOException {
+	public boolean doesExist (String username) {
         
-        if(username.equals("admin") && password.equals("pass123"))
+        if(username.equals("admin"))
         {
         	return true;
         }
