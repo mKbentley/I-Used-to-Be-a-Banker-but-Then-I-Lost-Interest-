@@ -10,7 +10,7 @@ public class LoginValidation
         {
         	result = true;
         }
-        else if(username.equals(NewUser.username) && password.equals(NewUser.password))
+        else if(password.equals(NewUser.users.get(username)))
         {
         	result = true;
         }
