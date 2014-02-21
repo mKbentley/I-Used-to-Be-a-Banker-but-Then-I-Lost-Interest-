@@ -64,11 +64,13 @@ public class DisplayRegisrationControlsActivity extends Activity {
 		EditText last_name = (EditText) findViewById(R.id.edit_lastname);
 		String lastName = first_name.getText().toString();
 		
-		NewUser user = new NewUser(username, password, firstName, lastName);
+		//NewUser user = new NewUser(username, password, firstName, lastName);
 		LoginValidation validate = new LoginValidation();
 		
 		if(!validate.doesExist(username))
 		{
+			NewUser user = new NewUser(username, password, firstName, lastName);
+			
 			Intent intent = new Intent(this, DisplayLoginControlsActivity.class);
 			startActivity(intent);
 			
