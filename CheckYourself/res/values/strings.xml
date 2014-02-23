@@ -26,5 +26,7 @@
     <string name="desired_username">Desired Username</string>
     <string name="desired_password">Desired Password</string>
     <string name="button_registration">Register</string>
+    <string name="createnew">Create a New Account</string>
+    <string name="current_account">View Current Account</string>
 
 </resources>
