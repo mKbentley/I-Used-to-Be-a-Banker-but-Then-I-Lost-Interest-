@@ -27,6 +27,31 @@
     <string name="desired_password">Desired Password</string>
     <string name="button_registration">Register</string>
     <string name="createnew">Create a New Account</string>
+    <string name="accountName">Name</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="socialsecurtiy ">Social Securtiy Number</string>
+    <string name="driversid">Drivers Licence Number</string>
+    <string name="minamount">Miniumn Amount </string>
     <string name="current_account">View Current Account</string>
+     
+    <string-array name="accounttype">
+        <item>Cheking</item>
+        <item>Saving</item>
+     </string-array>    
+     
+     <string-array name="checks">
+        <item>Yes</item>
+        <item>No</item>
+     </string-array>   
+     
+      <string-array name="direct">
+        <item>Yes</item>
+        <item>Nos</item>
+     </string-array>
+     
+      <string name="uchecks">Unlimited Checks</string>
+      <string name="ddeposit">Direct Deposit</string>
+      <string name="accounttype">Account Type</string>   
 
 </resources>
+
