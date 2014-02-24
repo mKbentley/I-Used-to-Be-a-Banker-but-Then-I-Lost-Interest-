@@ -50,7 +50,7 @@
             android:name="com.example.checkyourself.DisplayAccountRegistrationControlsActivity"
             android:label="@string/app_name">
             </activity>
-        </activity>
+     
           <activity
             android:name="com.example.checkyourself.AccountMainActivity"
             android:label="@string/app_name" >
