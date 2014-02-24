@@ -77,7 +77,7 @@ public class DisplayLoginControlsActivity extends Activity
 		
 		if(validate.checkCredentials(username, password))
 		{
-			Intent intent = new Intent(this, DisplayLoginSuccessful.class);
+	        	Intent intent = new Intent(this, AccountMainActivity.class);
 			startActivity(intent);
 		}
 		else
