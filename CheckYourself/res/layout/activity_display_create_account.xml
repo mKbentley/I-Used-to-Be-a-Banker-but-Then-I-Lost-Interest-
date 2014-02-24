@@ -56,6 +56,8 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:text="@string/createnew" />
+        android:text="@string/createnew" 
+        android:onClick="sendNewAccount"/>
 
 </LinearLayout>
+
