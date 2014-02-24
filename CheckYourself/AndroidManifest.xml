@@ -46,21 +46,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.checkyourself.MainActivity" />
         </activity>
-                 <activity
+           <activity
             android:name="com.example.checkyourself.DisplayAccountRegistrationControlsActivity"
-            android:label="@string/app_name"
-            android:parentActivityName="com.example.checkyourself.AccountMainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.checkyourself.AccountMainActivity" />
-        </activity>
+            android:label="@string/app_name">
+             </activity>
           <activity
             android:name="com.example.checkyourself.AccountMainActivity"
             android:label="@string/app_name" >
         </activity>
     </application>
 
-</manifest>
-   
-       
 </manifest>
