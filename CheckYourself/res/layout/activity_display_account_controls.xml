@@ -3,20 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-     android:background="#ff0000ff">
+    android:background="#ff0000ff">
+   
     
   <Button
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:text="@string/createnew"/>
+        android:text="@string/createnew"
+        android:onClick="sendAccountResgistration"/>
        
        
     <Button 
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:text="@string/current_account"/>
+        android:text="@string/current_account"
+        android:onClick="sendAccounts"/>
        
         
 </LinearLayout>
