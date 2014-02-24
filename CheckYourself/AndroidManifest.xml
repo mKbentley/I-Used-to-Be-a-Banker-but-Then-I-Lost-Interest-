@@ -46,16 +46,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.checkyourself.MainActivity" />
         </activity>
-                 <activity
-            android:name="com.example.checkyourself.DisplayAccountRegistrationControlsActivity"
-            android:label="@string/app_name">
-            </activity>
-     
-          <activity
-            android:name="com.example.checkyourself.AccountMainActivity"
-            android:label="@string/app_name" >
-        </activity>
     </application>
 
 </manifest>
-
