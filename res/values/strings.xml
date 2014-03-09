@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Check Yourself</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_register">Register</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_login_controls">Login</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="user_id">User ID: </string>
+    <string name="password">Password: </string>
+    <string name="edit_userID">User ID</string>
+    <string name="edit_password">Password</string>
+    <string name="button_enter">Enter</string>
+    <string name="button_login">Log in</string>
+    <string name="welcome">Welcome to Check Yourself!</string>
+    <string name="welcome_prompt">Please select one of the following options to get started."</string>
+    <string name="title_activity_display_login_successful">Login Successful</string>
+    <string name="dialog_login_unsuccessful">Your username or password were incorrect. Please try again.</string>
+    <string name="okay">Okay</string>
+    <string name="title_activity_display_login_unsuccessful">Login Unsuccessfu</string>
+    <string name="title_activity_display_regisration_controls">Registration</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="desired_username">Desired Username</string>
+    <string name="desired_password">Desired Password</string>
+    <string name="button_registration">Register</string>
+    <string name="createnew">Create a New Account</string>
+    <string name="accountName">Name</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="socialsecurtiy ">Social Securtiy Number</string>
+    <string name="driversid">Drivers Licence Number</string>
+    <string name="initialBalance">Initial Balance</string>
+    <string name="current_account">View Current Accounts</string>
+    <string name="your_accounts">Your Accounts:</string>
+    <string name="account_options_instructions">Please enter the account number for the account to which to perform the transaction.</string>
+    <string name="transaction_options_instructions">Please select one of the following options to continue:</string>
+    <string name="button_deposit">Deposit</string>
+    <string name="button_withdrawal">Withdraw</string>
+    <string name="button_make_transaction">Make a Transaction</string>
+    <string name="deposit_instructions">Please enter the amount to deposit.</string>
+    <string name="withdrawal_instructions">Please enter the amount to withdraw.</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_cancel">Cancel</string>
+
+    <string-array name="accounttype">
+        <item>Cheking</item>
+        <item>Saving</item>
+    </string-array>
+    <string-array name="checks">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="direct">
+        <item>Yes</item>
+        <item>Nos</item>
+    </string-array>
+
+    <string name="uchecks">Unlimited Checks</string>
+    <string name="ddeposit">Direct Deposit</string>
+    <string name="accounttype">Account Type</string>
+    <string name="title_activity_display_registration_controls">DisplayRegistrationControlsActivity</string>
+    <string name="title_activity_display_account_controls">DisplayAccountControlsActivity</string>
+    <string name="title_activity_display_account_registration_controls">DisplayAccountRegistrationControlsActivity</string>
+    <string name="title_activity_display_account_options">DisplayAccountOptionsActivity</string>
+    <string name="title_activity_display_transaction_options">Select a Transaction Type</string>
+    <string name="title_activity_display_deposit">Deposit</string>
+    <string name="title_activity_display_withdrawal">Withdrawal</string>
+
+</resources>
